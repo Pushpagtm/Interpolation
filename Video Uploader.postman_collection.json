@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "58a61e9e-3e9a-48ae-8aea-981ff9f7ea0e",
+		"name": "Video Uploader",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21418683"
+	},
+	"item": [
+		{
+			"name": "file_upload",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc2NjA4NjAxLCJpYXQiOjE2NzY2MDgzMDEsImp0aSI6ImY1ZmNiYjRmMDdhODRkNmViOTdjOTA4NjA0NjFlOWI1IiwidXNlcl9pZCI6Mn0.lSOq40U9kRJJcrVtjKCYcDZkGpAHCu2ngMi5ymwELII",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload/uploadFile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload",
+						"uploadFile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ash.gtm07@gmail.com\",\r\n    \"user_name\": \"aashish\",\r\n    \"password\": \"123456\",\r\n    \"password2\": \"123456\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ash.gtm07@gmail.com\",\r\n    \"otp\": \"9909\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/verify/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"verify",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ash.gtm07@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view_profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc3MDU1MTM0LCJpYXQiOjE2NzY5Njg3MzQsImp0aSI6IjlhNjgwNTI5MTI0NzQ3YWE5NTdlNWM4ZGY5Nzk2NzIzIiwidXNlcl9pZCI6M30.qzXoSIuLJv0sFweU90fTcW_WWIT1fpQGtQFNS4_5m3U",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "video_uploader",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc3MDU1OTk4LCJpYXQiOjE2NzY5Njk1OTgsImp0aSI6ImY4Y2IxMmVjZmY2YzQwMjQ5YTBmMGRlMDNkYTY3YjU2IiwidXNlcl9pZCI6M30.aT93cCYrDcntNQxFmv1Lz91o6FebPLBLqlJyLW0PDxw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "product_name",
+							"value": "bottle",
+							"type": "text"
+						},
+						{
+							"key": "sku",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "product_code",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "wine",
+							"type": "text"
+						},
+						{
+							"key": "video_image",
+							"type": "file",
+							"src": "/C:/Users/user/OneDrive/Pictures/HD-wallpaper-smoking-alone-no-friends-smoking.jpg"
+						},
+						{
+							"key": "uploaded_file",
+							"type": "file",
+							"src": "/D:/25data/SpicyTamarind.avi"
+						},
+						{
+							"key": "sizes",
+							"value": "340 ",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is the tested video uploader.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload/uploadFile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload",
+						"uploadFile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/upload/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

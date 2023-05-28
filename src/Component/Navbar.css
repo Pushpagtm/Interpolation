@@ -1,0 +1,34 @@
+/* .hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(102, 96, 96, 0.6),rgba(72, 67, 67, 0.6));
+    background-size: cover;
+    background-position: center;
+} */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.logo{
+    color: rgb(50, 50, 50);
+    font-size: 28px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li {
+    color: rgb(50, 50, 50);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li:hover{
+    color: #3068f5cc;
+    transition: .3s;
+}
