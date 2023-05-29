@@ -14,6 +14,7 @@ function Navbar(props) {
             <li><Link to='/upload'>Upload</Link></li>
             <li><Link to='/display'>View</Link></li>
           </ul>
+          <div className='flex gap-4'>
           <Link
               to="/register"
               class="inline-block text-sm font-bold px-4 py-2 leading-none border rounded text-white border-gray-400 hover:border-transparent bg-[#3068f5cc] hover:text-white dark:focus:ring-gray-700 dark:hover:bg-gray-700 hover:bg-gray-100 mt-4 lg:mt-0 hover:scale-[1.3]"
@@ -26,6 +27,7 @@ function Navbar(props) {
             >
               Login
             </Link>
+            </div>
         </nav>
 
             
